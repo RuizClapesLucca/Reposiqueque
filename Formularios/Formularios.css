@@ -1,0 +1,82 @@
+:root {
+  --page-bg: #fafafa;
+  --surface: #fffdfa;
+  --text: #241f1c;
+  --muted: #6b5f58;
+  --border: #cfcfc9;
+  --field-bg: #ffffff;
+  --accent: #6b5f58;
+  --accent-hover: #241f1c;
+  --shadow: 0 12px 30px rgba(36, 31, 28, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  padding: 24px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.field {
+  width: 100%;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--field-bg);
+  padding: 0 12px;
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+}
+
+.field::placeholder {
+  color: var(--muted);
+}
+
+.field:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(107, 95, 88, 0.14);
+}
+
+.button {
+  height: 34px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fffdfa;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
