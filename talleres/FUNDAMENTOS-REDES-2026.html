@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Redes</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="detalle.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html">Talleres</a>
+  </nav>
+
+  <main class="detail-container">
+    <section>
+      <h1 class="workshop-title">Fundamentos de Redes</h1>
+      <div class="workshop-meta">
+        <p>Instructor: Ing. Carlos Ramírez</p>
+        <p>Fecha: 2026-08-12</p>
+        <p>Asistentes registrados: 64 / 30</p>
+      </div>
+    </section>
+
+    <!-- Ligadura al archivo externo de Formularios -->
+    <section>
+      <h2 class="section-title">Registrar asistencia</h2>
+      <form action="../formularios/Formularios.html" method="GET" class="register-form">
+        <input type="hidden" name="taller" value="redes">
+        <p class="form-notice">Para completar tu registro, presiona el siguiente botón:</p>
+        <button type="submit" class="btn-primary">Ir al Formulario de Registro</button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="section-title">Alumnos registrados</h2>
+      <p class="status-unauthorized">No autorizado</p>
+    </section>
+  </main>
+
+  <script src="detalle.js"></script>
+</body>
+</html>
